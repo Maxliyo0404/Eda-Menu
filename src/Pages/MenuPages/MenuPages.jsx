@@ -5,7 +5,7 @@ import Hero from "../../Components/Hero/Hero";
 function MenuPages() {
   return (
     <>
-    <Hero/>
+     <Hero/>
     </>
   )
 }

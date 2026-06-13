@@ -19,9 +19,9 @@ function Header() {
           <a className="logo" href="#"><img src={logos_1} alt="rasm" /></a>
               <nav className={`header-nav ${isMenuOpen ? "active" : ""}`}>
              <ul className="header-list">
-                 <li><Link className="header-link" to="home">{t("header.menu")}</Link></li>
-                 <li><Link className="header-link" to="services">{t("header.news")}</Link></li>
-                 <li><Link className="header-link" to="company">{t("header.about")}</Link></li>
+                  <li><Link className="header-link" to="/menu">{t("header.menu")}</Link></li>
+                  <li><Link className="header-link" to="/news">{t("header.news")}</Link></li>
+                  <li><Link className="header-link" to="/about">{t("header.about")}</Link></li>
                  <li><Link className="header-link" to="career" onClick={(e)=> e.preventDefault()}>{t("header.contact us")}</Link></li>
                  <button type="submit" className="header-btn">{t("header.header-btn")}</button>
              </ul>

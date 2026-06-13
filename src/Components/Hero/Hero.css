@@ -1,0 +1,53 @@
+.hero {
+  background-color: #a31d1d;
+
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text-content { width: 50%; }
+
+.hero-main-title { font-size: 64px; margin: 20px 0; }
+
+.hero-description { font-size: 16px; opacity: 0.9; margin-bottom: 30px; max-width: 450px; }
+
+.hero-action-btn {
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  background: #fff;
+  color: #a31d1d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Aylana effektlar */
+.hero-visual { position: relative; width: 500px; height: 500px; }
+
+.circle-bg {
+  position: absolute;
+  width: 500px; height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.circle-bg-inner {
+  position: absolute;
+  top: 50px; left: 50px;
+  width: 400px; height: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.hero-plate { position: relative; z-index: 2; width: 100%; }
+
+.scroll-text {
+  position: absolute;
+  bottom: 10px; right: -30px;
+  transform: rotate(90deg);
+  font-size: 12px;
+}

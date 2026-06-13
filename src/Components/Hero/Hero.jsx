@@ -6,7 +6,8 @@ import hero_e from "./image/hero_e.png";
 function Hero() {
     const [t, i18n] = useTranslation();
   return (
-    <section className="hero">
+    <>
+        <section className="hero">
       <div className="container hero-inner">
         <div className="hero-text-content">
           <span className="hero-badge">{t("hero.mini_title")}</span>
@@ -23,6 +24,8 @@ function Hero() {
         </div>
       </div>
     </section>
+    </>
+  
   )
 }
 
