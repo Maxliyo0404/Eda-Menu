@@ -1,7 +1,8 @@
 import "./App.css";
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Menu from "./Pages/MenuPages/MenuPages";
+import Layout from "./Componenets/Layout/Layout";
+I
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
      <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout/>}>
-        <Route path="menu" element = {<Menu/>}/>
+        <Route path="menu" element = {<M/>}/>
         <Route path="news" element = {<ServicesPages/>}/>
         <Route path="about" element = {<CompanyPages/>}/>
 
