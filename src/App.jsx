@@ -1,7 +1,7 @@
 import "./App.css";
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Componenets/Layout/Layout";
+import Layout from "./Components/Layout/Layout";
 import MenuPages from "./Pages/MenuPages/MenuPages";
 import AboutPages from "./Pages/AboutPages/AboutPages ";
 import NewsPages from "./Pages/NewsPages/NewsPages";
