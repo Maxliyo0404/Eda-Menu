@@ -4,7 +4,7 @@ import React from 'react'
 import hero_e from "./image/hero_e.png";
 
 function Hero() {
-    const [t, i18n] = useTranslation();
+    const{t, i18n} = useTranslation();
   return (
     <>
         <section className="hero">
