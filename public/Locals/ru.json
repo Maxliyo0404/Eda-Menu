@@ -11,5 +11,9 @@
     "title": "The Key To Fine Dining",
     "desc": "Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus.",
     "btn": "Посмотреть меню"
-  }
+  },
+   "sectionOne" :  {
+  "popular": "Популярные блюда",
+  "dish1": "Barbecue Shish kebab Shashlik Skewer"
+}
   }
