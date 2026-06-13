@@ -1,10 +1,10 @@
-import "./News.css";
+import "./NewsPages.css";
 import React from 'react'
 
-function News() {
+function NewsPages() {
   return (
     <div>News</div>
   )
 }
 
-export default News
+export default NewsPages

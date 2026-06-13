@@ -1,10 +1,10 @@
-import "./Menu.css";
+import "./MenuPages.css";
 import React from 'react'
 
-function Menu() {
+function MenuPages() {
   return (
     <div>Menu</div>
   )
 }
 
-export default Menu
+export default MenuPages

@@ -1,7 +1,7 @@
-import "./About Us.css";
+import "./AboutPages.css";
 import React from 'react'
 
-function About () {
+function AboutPages () {
   return (
     <div>
       
@@ -9,4 +9,4 @@ function About () {
   )
 }
 
-export default About 
+export default AboutPages 
