@@ -5,5 +5,11 @@
       "about": "Biz haqimizda",
       "contact us": "Bog'lanish",
       "header-btn": "Kirish"
-    }
+    },
+    "hero": {
+    "mini_title": "Faqat yangi va mazali",
+    "title": "The Key To Fine Dining",
+    "desc": "Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus.",
+    "btn": "Menyuni ko'rish"
+  }
   }
