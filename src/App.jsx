@@ -3,6 +3,8 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Componenets/Layout/Layout";
 import MenuPages from "./Pages/MenuPages/MenuPages";
+import AboutPages from "./Pages/AboutPages/AboutPages ";
+import NewsPages from "./Pages/NewsPages/NewsPages";
 
 
 
@@ -13,9 +15,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout/>}>
         <Route path="menu" element = {<MenuPages/>}/>
-        <Route path="news" element = {<ServicesPages/>}/>
-        <Route path="about" element = {<CompanyPages/>}/>
-
+        <Route path="news" element = {<AboutPages/>}/>
+        <Route path="about" element = {<NewsPages/>}/>
       </Route>
     </Routes>
        </BrowserRouter>
