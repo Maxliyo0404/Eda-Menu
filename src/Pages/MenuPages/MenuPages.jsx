@@ -1,9 +1,12 @@
 import "./MenuPages.css";
 import React from 'react'
+import Hero from "../../Components/Hero/Hero";
 
 function MenuPages() {
   return (
-    <div>Menu</div>
+    <>
+    <Hero/>
+    </>
   )
 }
 
