@@ -17,10 +17,8 @@ function Hero() {
         </div>
         
         <div className="hero-visual">
-          <div className="circle-bg"></div>
-          <div className="circle-bg-inner"></div>
           <img src={hero_e} alt="Food" className="hero-plate" />
-          <span className="scroll-text">SCROLL</span>
+    
         </div>
       </div>
     </section>
