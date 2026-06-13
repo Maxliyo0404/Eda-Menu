@@ -5,5 +5,11 @@
       "about": "О нас",
       "contact us": "Контакты",
       "header-btn": "Войти"
-    }
+    },
+    "hero": {
+    "mini_title": "Только свежее и вкусное",
+    "title": "The Key To Fine Dining",
+    "desc": "Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus.",
+    "btn": "Посмотреть меню"
+  }
   }

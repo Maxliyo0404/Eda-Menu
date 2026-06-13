@@ -5,5 +5,11 @@
         "about" : "About Us",
         "contact us" : "Contact Us",
         "header-btn" : "Log in "
-    }
+    },
+    "hero": {
+    "mini_title": "Chase The New Flavour",
+    "title": "The Key To Fine Dining",
+    "desc": "Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus.",
+    "btn": "Explore Menu"
+  }
 }
