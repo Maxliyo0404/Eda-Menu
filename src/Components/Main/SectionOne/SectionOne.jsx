@@ -5,12 +5,14 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './SectionOne.css';
+import shash from "./image/shash.png";
+import pitsa from "./image/pitsa.png";
 
 const dishes = [
-  { id: 1, key: "dish1", price: "12.00" },
-  { id: 2, key: "dish1", price: "12.00" },
-  { id: 3, key: "dish1", price: "12.00" },
-  { id: 4, key: "dish1", price: "12.00" }
+  { id: 1, key: "sectionOne.dish1", price: "12.00" },
+  { id: 2, key: "sectionOne.dish1", price: "12.00" },
+  { id: 3, key: "sectionOne.dish1", price: "12.00" },
+  { id: 4, key: "sectionOne.dish1", price: "12.00" }
 ];
 
 const SectionOne = () => {
@@ -19,7 +21,7 @@ const SectionOne = () => {
   return (
     <section className="section-container">
       <div className="header-row">
-        <h2 className="title">{t("popular")}</h2>
+        <h2 className="title">{t("sectionOne.popular")}</h2>
         <div className="custom-nav">
           <button className="prev-btn">{"<"}</button>
           <button className="next-btn">{">"}</button>
@@ -35,8 +37,7 @@ const SectionOne = () => {
         {dishes.map((dish) => (
           <SwiperSlide key={dish.id}>
             <div className="dish-card">
-              <img src="image_d007e3.png" alt="dish" className="dish-img" />
-              {/* Rasmda ko'rganingizdek aynan shu text chiqadi */}
+              <img src={shash} alt="dish" className="dish-img" />
               <h3 className="dish-name">{t(dish.key)}</h3>
               <div className="stars">★★★★☆</div>
               <p className="price">${dish.price}</p>
