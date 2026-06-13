@@ -1,0 +1,9 @@
+{
+    "header": {
+        "menu" : "Menu",
+        "news" : "News",
+        "about" : "About Us",
+        "contact us" : "Contact Us",
+        "header-btn" : "Log in "
+    }
+}
