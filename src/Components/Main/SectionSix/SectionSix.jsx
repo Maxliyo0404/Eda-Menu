@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import './SectinxSix.css'; // Fayl nomingizga moslang
+import './SectionSix.css'; // Fayl nomingizga moslang
 
 // Rasmlarni to'g'ridan-to'g'ri import qilamiz
 import ege1 from './image/ege1.png';
