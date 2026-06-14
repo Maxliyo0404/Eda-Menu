@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './SectionTwo.css';
-
+import
 
 const menuItems = [
   { id: 1, cat: 'shashlik', img: '/images/1.png' },
