@@ -21,36 +21,30 @@ const dishes = [
 const SectionOne = () => {
   const { t } = useTranslation();
 
-  return (
+ return (
     <section className="section">
       <div className="container">
-        <div className="section-wrapper">
-      <div className="header-row">
-        <h2 className="title">{t("sectionOne.popular")}</h2>
-        <div className="custom-nav">
-          <button className="prev-btn">{"<"}</button>
-          <button className="next-btn">{">"}</button>
+      <div className="section-wrapper">
+        <div className="header-row">
+          <h2 className="title">{t("sectionOne.popular")}</h2>
+          <div className="custom-nav">
+            <button className="prev-btn">{"<"}</button>
+            <button className="next-btn">{">"}</button>
+          </div>
         </div>
-      </div>
 
-      <Swiper
-        modules={[Navigation]}
-        navigation={{ prevEl: '.prev-btn', nextEl: '.next-btn' }}
-        spaceBetween={20}
-        slidesPerView={4}
-      >
-        {dishes.map((dish) => (
-          <SwiperSlide key={dish.id}>
-            <div className="dish-card">
-              <img src={dish.img} alt="dish" className="dish-img" />
+       
+        <div className="dishes-grid">
+          {dishes.map((dish) => (
+            <div key={dish.id} className="dish-card">
+              <img src={dish.img} alt={t(dish.key)} className="dish-img" />
               <h3 className="dish-name">{t(dish.key)}</h3>
               <div className="stars">★★★★☆</div>
               <p className="price">${dish.price}</p>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      </div>
+          ))}
+        </div>
+        </div>
       </div>
     </section>
   );
