@@ -15,5 +15,14 @@
    "sectionOne": {
     "popular": "Popular Dishes",
   "dish1": "Barbecue Shish kebab Shashlik Skewer"
-   }
+   },
+   "sectionTwo": {
+    "title": "Our Regular Menu Pack",
+    "all": "All",
+    "shashlik": "Shashlik",
+    "pizza": "Pizza",
+    "burger": "Burger",
+    "doner": "Doner",
+    "dishName": "Barbecue Shish kebab Skewer"
+  }
 }
