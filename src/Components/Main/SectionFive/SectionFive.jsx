@@ -2,7 +2,6 @@ import React from 'react';
 import './SectionFive.css';
 
 const SectionFive = () => {
-  // Bu video restoranlar uchun mos (sifatli klip)
   const videoId = "k4tDq397Sfk"; 
 
   return (
