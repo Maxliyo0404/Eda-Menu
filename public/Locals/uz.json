@@ -42,5 +42,30 @@
         "text": "Bu men yegan eng mazali burgerlardan biri. Mahsulotlar sifati juda yuqori. Narxiga yarasha ajoyib sifat." 
       }
     ]
+  },
+  "sectionFour": {
+    "subtitle": "Yangiliklar",
+    "title": "Gericht Yangiliklari",
+    "btnViewMore": "Ko'proq ko'rish",
+    "posts": [
+      {
+        "title": "Grilni tayyorlash va parvarish qilish bo'yicha maslahatlar",
+        "desc": "Ushbu oddiy maslahatlar va tozalash usullari bilan grilingizni doimo a'lo holatda saqlang.",
+        "date": "14 Iyun 2026",
+        "readMore": "Batafsil"
+      },
+      {
+        "title": "Ochiq havodagi ziyofatlar uchun yozgi retseptlar",
+        "desc": "Mehmonlaringizni hayratda qoldiradigan sevimli yozgi taomlarimiz retseptlari bilan tanishing.",
+        "date": "10 Iyun 2026",
+        "readMore": "Batafsil"
+      },
+      {
+        "title": "Nima uchun bizning mahsulotlarimiz o'zgacha",
+        "desc": "Bizning taomlarimizni ajralib turishiga sabab bo'lgan yangi va sifatli mahsulotlar haqida bilib oling.",
+        "date": "05 Iyun 2026",
+        "readMore": "Batafsil"
+      }
+    ]
   }
 }
