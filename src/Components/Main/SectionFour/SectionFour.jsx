@@ -1,10 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './SectionFour.css';
+import olov  from "./image/olov.png"
+
 
 const SectionFour = () => {
   const { t } = useTranslation();
-  const posts = [1, 2, 3]; // 3 ta post uchun massiv
+  const posts = [1, 2, 3]; 
 
   return (
     <section id="sectionFour" className="news-section">
@@ -16,8 +18,8 @@ const SectionFour = () => {
           {posts.map((_, index) => (
             <div key={index} className="news-card">
               <div className="img-placeholder">
-                 {/* Rasmlaringizni public/images/news1.png tarzida qo'ying */}
-                 <img src={`/images/news${index + 1}.png`} alt="News" />
+        
+                 <img src={olov} alt="News" />
               </div>
               <h3>{t("sectionFour.posts.0.title")}</h3>
               <p className="desc">{t("sectionFour.posts.0.desc")}</p>

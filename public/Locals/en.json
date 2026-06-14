@@ -42,5 +42,30 @@
         "text": "Probably the best burger I've had in a long time. The quality of ingredients is top-notch. Great value for money." 
       }
     ]
+  },
+  "sectionFour": {
+    "subtitle": "News",
+    "title": "Gericht Updates",
+    "btnViewMore": "View More",
+    "posts": [
+      {
+        "title": "Tips For Prepping And Caring For Your Grill",
+        "desc": "Keep your grill in top condition with these simple maintenance tips and cleaning hacks.",
+        "date": "14 Jun 2026",
+        "readMore": "Read More"
+      },
+      {
+        "title": "Best Summer Recipes for Your Outdoor Party",
+        "desc": "Discover our favorite summer recipes that will impress your guests at every outdoor party.",
+        "date": "10 Jun 2026",
+        "readMore": "Read More"
+      },
+      {
+        "title": "Why Our Ingredients Make The Difference",
+        "desc": "Learn about the fresh, locally sourced ingredients that make our dishes stand out.",
+        "date": "05 Jun 2026",
+        "readMore": "Read More"
+      }
+    ]
   }
 }
