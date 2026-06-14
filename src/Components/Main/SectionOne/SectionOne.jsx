@@ -9,8 +9,8 @@ import shash from "./image/shash.png";
 import pitsa from "./image/pitsa.png";
 
 const dishes = [
-  { id: 1, key: "sectionOne.dish1", price: "12.00" },
-  { id: 2, key: "sectionOne.dish1", price: "12.00" },
+  { id: 1, key: "sectionOne.dish1", price: "12.00", img: shash },
+  { id: 2, key: "sectionOne.dish1", price: "12.00", img: pitsa },
   { id: 3, key: "sectionOne.dish1", price: "12.00" },
   { id: 4, key: "sectionOne.dish1", price: "12.00" }
 ];
@@ -37,7 +37,7 @@ const SectionOne = () => {
         {dishes.map((dish) => (
           <SwiperSlide key={dish.id}>
             <div className="dish-card">
-              <img src={shash} alt="dish" className="dish-img" />
+              <img src={dish.img} alt="dish" className="dish-img" />
               <h3 className="dish-name">{t(dish.key)}</h3>
               <div className="stars">★★★★☆</div>
               <p className="price">${dish.price}</p>
