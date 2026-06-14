@@ -24,5 +24,23 @@
     "burger": "Burger",
     "doner": "Doner",
     "dishName": "Barbekyu Shashlik Skewer"
+  },
+  "sectionThree": {
+    "subtitle": "Sharhlar",
+    "title": "Baxtli mijozlarimiz",
+    "cards": [
+      { 
+        "name": "Mariya", 
+        "text": "Taomlar juda mazali, ayniqsa shashliklari! Xizmat ko'rsatish tez va samimiy. Albatta yana qaytib kelaman." 
+      },
+      { 
+        "name": "Aleks", 
+        "text": "Oila bilan kechki ovqatlanish uchun ajoyib joy. Atmosfera juda qulay va xodimlar juda e'tiborli. Hammaga tavsiya qilaman!" 
+      },
+      { 
+        "name": "Jon", 
+        "text": "Bu men yegan eng mazali burgerlardan biri. Mahsulotlar sifati juda yuqori. Narxiga yarasha ajoyib sifat." 
+      }
+    ]
   }
 }
