@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './SectionTwo.css';
-import
+import shash from "./image/shash.png";
+import pitsa from "./image/pitsa.png";
+import gamburger from "./image/gamburger.png";
+import sous from "./image/sous.png";
 
 const menuItems = [
-  { id: 1, cat: 'shashlik', img: '/images/1.png' },
+  { id: 1, cat: 'shashlik', img: shash },
   { id: 2, cat: 'pizza', img: '/images/2.png' },
   { id: 3, cat: 'burger', img: '/images/3.png' },
   { id: 4, cat: 'doner', img: '/images/4.png' },
