@@ -24,5 +24,23 @@
     "burger": "Burger",
     "doner": "Doner",
     "dishName": "Barbecue Shish kebab Skewer"
+  },
+  "sectionThree": {
+    "subtitle": "Testimony",
+    "title": "Happy Customers",
+    "cards": [
+      { 
+        "name": "Maria", 
+        "text": "The food here is absolutely delicious, especially the shashlik! The service was fast and friendly. I will definitely come back again." 
+      },
+      { 
+        "name": "Alex", 
+        "text": "A great place for family dinners. The ambiance is cozy, and the staff is very attentive. Highly recommended for everyone!" 
+      },
+      { 
+        "name": "John", 
+        "text": "Probably the best burger I've had in a long time. The quality of ingredients is top-notch. Great value for money." 
+      }
+    ]
   }
 }
