@@ -67,6 +67,12 @@
         "readMore": "Читать далее"
       }
     ]
+  },
+  "sectionSix": {
+    "subtitle": "Instagram",
+    "title": "Фотогалерея",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque.",
+    "btnViewMore": "Смотреть больше"
   }
 
 }

@@ -67,5 +67,11 @@
         "readMore": "Read More"
       }
     ]
+  },
+  "sectionSix": {
+    "subtitle": "Instagram",
+    "title": "Photo Gallery",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque.",
+    "btnViewMore": "View More"
   }
 }
