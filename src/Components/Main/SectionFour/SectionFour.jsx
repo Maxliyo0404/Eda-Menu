@@ -1,11 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './SectionFour.css';
-import olov from './image/olov.png'; // Bitta rasm barcha cardlar uchun
+import olov from './image/olov.png'; 
 
 const SectionFour = () => {
   const { t, i18n } = useTranslation();
-  // JSON dagi "posts" massivini chaqirib olish
   const posts = t("sectionFour.posts", { returnObjects: true });
 
   return (

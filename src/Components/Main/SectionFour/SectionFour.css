@@ -1,18 +1,18 @@
 .news-section { 
-  padding: 80px 5%; 
-  background-color: #ffffff; /* Fonni oq qildik */
+  padding: 30px 0; 
+  background-color: #ffffff;
   text-align: center; 
 }
 
 .subtitle { 
-  color: #545454; /* Subtitle rangi */
+  color: #545454;
   font-weight: 600; 
-  margin-bottom: 10px; 
+  margin-bottom: 15px; 
 }
 
 .title { 
   font-size: 45px; 
-  color: #DCCA87; /* Sarlavha rangi */
+  color: #DCCA87; 
   margin-bottom: 50px; 
 }
 
@@ -24,9 +24,8 @@
 
 .news-card { 
   background: #ffffff; 
-  border: 1px solid #e0e0e0; /* Karta chegarasi */
+  border: 1px solid #e0e0e0;
   border-radius: 8px; 
-  overflow: hidden; 
   text-align: left; 
   transition: 0.3s; 
 }
@@ -47,12 +46,12 @@
 }
 
 .card-content h3 { 
-  color: #0c0c0c; /* Sarlavha matni qora */
+  color: #0c0c0c; 
   margin-bottom: 15px; 
 }
 
 .card-content p { 
-  color: #777777; /* Tavsif rangi */
+  color: #777777;
   margin-bottom: 20px; 
 }
 
@@ -89,4 +88,4 @@ border: 1px solid #BB2339;
 }
 
 @media (max-width: 1024px) { .news-container { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .news-container { grid-template-columns: 1fr; }.title{font-size: 30px; margin-top: -40px;} }
+@media (max-width: 600px) { .news-container { grid-template-columns: 1fr;  padding-top: 40px;}.title{font-size: 30px; margin-bottom: 30px;} }
