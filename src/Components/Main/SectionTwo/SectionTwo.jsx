@@ -5,20 +5,26 @@ import shash from "./image/shash.png";
 import pitsa from "./image/pitsa.png";
 import gamburger from "./image/gamburger.png";
 import sous from "./image/sous.png";
+import lavash from "./image/lavash.png";
+import sous_1 from "./image/sous_1.png";
+import lav_1  from "./image/lav_1.png";
+import lav_2  from "./image/lav_2.png";
+import lav_3  from "./image/lav_3.png";
+import lav_4  from "./image/lav_4.png";
 
 const menuItems = [
   { id: 1, cat: 'shashlik', img: shash },
-  { id: 2, cat: 'pizza', img: '/images/2.png' },
-  { id: 3, cat: 'burger', img: '/images/3.png' },
-  { id: 4, cat: 'doner', img: '/images/4.png' },
-  { id: 5, cat: 'shashlik', img: '/images/5.png' },
-  { id: 6, cat: 'pizza', img: '/images/6.png' },
-  { id: 7, cat: 'burger', img: '/images/7.png' },
-  { id: 8, cat: 'doner', img: '/images/8.png' },
-  { id: 9, cat: 'shashlik', img: '/images/9.png' },
-  { id: 10, cat: 'pizza', img: '/images/10.png' },
-  { id: 11, cat: 'burger', img: '/images/11.png' },
-  { id: 12, cat: 'doner', img: '/images/12.png' }
+  { id: 2, cat: 'pizza', img: sous },
+  { id: 3, cat: 'burger', img:lavash },
+  { id: 4, cat: 'doner', img: sous_1 },
+  { id: 5, cat: 'shashlik', img: pitsa },
+  { id: 6, cat: 'pizza', img: lav_1 },
+  { id: 7, cat: 'burger', img:lav_2  },
+  { id: 8, cat: 'doner', img: gamburger },
+  { id: 9, cat: 'shashlik', img: lav_3  },
+  { id: 10, cat: 'pizza', img: lav_4  },
+  { id: 11, cat: 'burger', img: sous },
+  { id: 12, cat: 'doner', img: sous_1 }
 ];
 
 const SectionTwo = () => {
