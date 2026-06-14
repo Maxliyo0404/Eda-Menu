@@ -21,17 +21,17 @@
 }
 @media (max-width: 1024px) {
   .video-container {
-    width: 95%; /* Planshetlarda ko'proq joy egallaydi */
-    border-radius: 8px; /* Burchaklari sal yumshoqroq */
+    width: 95%; 
+    border-radius: 8px; 
   }
 }
 
 @media (max-width: 600px) {
   .video-section {
-    padding: 20px 0; /* Telefonlarda yuqori va pastki bo'shliq kamayadi */
+    padding: 20px 0; 
   }
   .video-container {
-    width: 100%; /* Telefon ekranida to'liq eniga chiqadi */
-    border-radius: 0; /* Telefonlarda ramka yo'qoladi */
+    width: 100%; 
+    border-radius: 0; /
   }
 }
