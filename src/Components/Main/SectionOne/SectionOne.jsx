@@ -7,19 +7,24 @@ import 'swiper/css/navigation';
 import './SectionOne.css';
 import shash from "./image/shash.png";
 import pitsa from "./image/pitsa.png";
+import gamburger from "./image/gamburger.png";
+import sous from "./image/sous.png";
+
 
 const dishes = [
   { id: 1, key: "sectionOne.dish1", price: "12.00", img: shash },
   { id: 2, key: "sectionOne.dish1", price: "12.00", img: pitsa },
-  { id: 3, key: "sectionOne.dish1", price: "12.00" },
-  { id: 4, key: "sectionOne.dish1", price: "12.00" }
+  { id: 3, key: "sectionOne.dish1", price: "12.00", img: gamburger },
+  { id: 4, key: "sectionOne.dish1", price: "12.00", img: sous }
 ];
 
 const SectionOne = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="section-container">
+    <section className="section">
+      <div className="container">
+        <div className="section-wrapper">
       <div className="header-row">
         <h2 className="title">{t("sectionOne.popular")}</h2>
         <div className="custom-nav">
@@ -45,6 +50,8 @@ const SectionOne = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      </div>
+      </div>
     </section>
   );
 };
