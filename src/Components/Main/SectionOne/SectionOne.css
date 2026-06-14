@@ -1,4 +1,6 @@
-
+.section{
+  background: #F8F8F8;
+}
 .section-wrapper { 
   padding: 60px 0;
 }

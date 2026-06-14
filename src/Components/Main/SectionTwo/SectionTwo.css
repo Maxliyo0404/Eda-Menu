@@ -1,0 +1,29 @@
+.menu-section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+.menu-title { text-align: center; color: #b91c1c; font-size: 40px; margin-bottom: 40px; }
+
+/* Tugmalar */
+.filter-buttons { display: flex; justify-content: center; gap: 12px; margin-bottom: 40px; flex-wrap: wrap; }
+.filter-buttons button { 
+  padding: 10px 25px; border-radius: 30px; border: 2px solid #b91c1c; 
+  background: white; color: #b91c1c; font-weight: 600; cursor: pointer; transition: 0.3s; 
+}
+.filter-buttons button:hover, .filter-buttons button.active { 
+  background: #b91c1c; color: white; box-shadow: 0 4px 10px rgba(185, 28, 28, 0.3);
+}
+
+/* Grid 4 ta ustun */
+.menu-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
+
+.menu-card { 
+  border: 1px solid #f3f4f6; padding: 20px; border-radius: 20px; 
+  text-align: center; transition: 0.4s; background: white;
+}
+.menu-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.menu-card img { width: 100%; height: 160px; object-fit: cover; border-radius: 15px; margin-bottom: 15px; }
+.menu-card h3 { font-size: 16px; margin: 10px 0; }
+.menu-card .price { color: #b91c1c; font-weight: bold; }
+
+/* Responsive */
+@media (max-width: 992px) { .menu-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) { .menu-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .menu-grid { grid-template-columns: 1fr; } }
