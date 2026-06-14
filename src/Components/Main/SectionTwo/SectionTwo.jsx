@@ -28,7 +28,7 @@ const menuItems = [
 ];
 
 const SectionTwo = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [filter, setFilter] = useState('all');
 
   const filteredItems = filter === 'all' 

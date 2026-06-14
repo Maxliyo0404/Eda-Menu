@@ -19,7 +19,7 @@ const dishes = [
 ];
 
 const SectionOne = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
  return (
     <section className="section">

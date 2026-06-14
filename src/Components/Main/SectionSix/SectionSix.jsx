@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import './SectionSix.css'; // Fayl nomingizga moslang
+// import './SectionSix.css'; // Fayl nomingizga moslang
 
 // Rasmlarni to'g'ridan-to'g'ri import qilamiz
 import ege1 from './image/ege1.png';
@@ -9,7 +9,7 @@ import ege3 from './image/ege_3.png';
 import ege4 from './image/ege_4.png';
 
 const SectionSix = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   
   // Rasmlar massivi
   const images = [ege1, ege2, ege3, ege4];

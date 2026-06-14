@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import i18next from "i18next";
 import logos_1 from "./image/logos_1.png";
 function Header() {
-    const [t, i18n] = useTranslation();
+    const {t, i18n} = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);

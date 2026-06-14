@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './SectionThree.css';
 
 const SectionThree = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const cards = t("sectionThree.cards", { returnObjects: true });
 
   return (

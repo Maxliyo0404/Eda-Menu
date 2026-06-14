@@ -1,0 +1,92 @@
+.news-section { 
+  padding: 80px 5%; 
+  background-color: #ffffff; /* Fonni oq qildik */
+  text-align: center; 
+}
+
+.subtitle { 
+  color: #545454; /* Subtitle rangi */
+  font-weight: 600; 
+  margin-bottom: 10px; 
+}
+
+.title { 
+  font-size: 45px; 
+  color: #DCCA87; /* Sarlavha rangi */
+  margin-bottom: 50px; 
+}
+
+.news-container { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; 
+}
+
+.news-card { 
+  background: #ffffff; 
+  border: 1px solid #e0e0e0; /* Karta chegarasi */
+  border-radius: 8px; 
+  overflow: hidden; 
+  text-align: left; 
+  transition: 0.3s; 
+}
+
+.news-card:hover { 
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.news-card img { 
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
+}
+
+.card-content { 
+  padding: 25px; 
+}
+
+.card-content h3 { 
+  color: #0c0c0c; /* Sarlavha matni qora */
+  margin-bottom: 15px; 
+}
+
+.card-content p { 
+  color: #777777; /* Tavsif rangi */
+  margin-bottom: 20px; 
+}
+
+.card-footer { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding-top: 15px; 
+}
+
+.read-more { 
+  color: #DCCA87; 
+  cursor: pointer; 
+  font-weight: bold; 
+}
+
+.date { 
+  color: #777777; 
+  font-size: 14px; 
+}
+
+.view-all { 
+  margin-top: 50px; 
+  padding: 12px 30px; 
+  border-radius: 100px;
+  background: none; 
+border: 1px solid #BB2339;
+  color: #545454; 
+  cursor: pointer; 
+}
+
+.view-all:hover {  
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) { .news-container { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .news-container { grid-template-columns: 1fr; }.title{font-size: 30px; margin-top: -40px;} }
