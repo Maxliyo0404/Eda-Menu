@@ -1,29 +1,27 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import './SectionSix.css';
+import './SectinxSix.css'; // Fayl nomingizga moslang
 
-import img1 from './image/food1.jpg';
-import img2 from './image/food2.jpg';
-import img3 from './image/food3.jpg';
-import img4 from './image/food4.jpg';
+// Rasmlarni to'g'ridan-to'g'ri import qilamiz
+import ege1 from './image/ege1.png';
+import ege2 from './image/ege_2.png';
+import ege3 from './image/ege_3.png';
+import ege4 from './image/ege_4.png';
 
 const SectionSix = () => {
   const { t } = useTranslation();
-  const images = [img1, img2, img3, img4];
+  
+  // Rasmlar massivi
+  const images = [ege1, ege2, ege3, ege4];
 
   return (
-    <section id="sectionGallery" className="gallery-section">
-      <div className="gallery-left">
-        <p className="subtitle">{t("gallery.subtitle")}</p>
-        <h2 className="title">{t("gallery.title")}</h2>
-        <p className="desc">{t("gallery.description")}</p>
-        <button className="view-btn">{t("gallery.btn")}</button>
-      </div>
+    <section id="sectionSix" className="gallery-section">
+      {/* Matnlar va boshqa qismlar... */}
       
       <div className="gallery-right">
         {images.map((img, index) => (
           <div key={index} className="img-card">
-            <img src={img} alt={`Gallery ${index}`} />
+            <img src={img} alt={`Gallery ${index + 1}`} />
             <div className="overlay">
                <span className="icon">📸</span>
             </div>
