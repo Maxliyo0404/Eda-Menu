@@ -15,5 +15,14 @@
    "sectionOne" : {
   "popular": "Ommabop taomlar",
   "dish1": "Barbecue Shish kebab Shashlik Skewer"
-}
+  },
+  "sectionTwo": {
+    "title": "Bizning Muntazam Menyularimiz",
+    "all": "Hammasi",
+    "shashlik": "Shashlik",
+    "pizza": "Pitsa",
+    "burger": "Burger",
+    "doner": "Doner",
+    "dishName": "Barbekyu Shashlik Skewer"
   }
+}
