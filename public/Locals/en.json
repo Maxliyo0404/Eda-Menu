@@ -73,6 +73,19 @@
     "title": "Photo Gallery",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque.",
     "btnViewMore": "View More"
+  },
+  "footer": {
+    "newsletter": "Newsletter",
+    "subTitle": "Subscribe To Our Newsletter",
+    "desc": "And never miss latest Updates!",
+    "placeholder": "Email Address",
+    "btn": "Subscribe",
+    "contact": "Contact Us",
+    "address": "8 W 53rd St, London, NY 10019, UK",
+    "hours": "Working Hours",
+    "weekdays": "Monday-Friday: 08:00 am - 12:00 am",
+    "weekend": "Saturday-Sunday: 07:00 am - 11:00 pm",
+    "rights": "2022 Pop online. All Rights reserved."
   }
   
 }
