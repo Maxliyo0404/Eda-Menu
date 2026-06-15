@@ -56,7 +56,10 @@ background: none;
 }
 
 .logo-col img { width: 100px; margin-bottom: 15px; }
-
+.footer-col{
+    display: flex ;
+    align-items: center;
+}
 @media (max-width: 900px) {
   .footer-content { grid-template-columns: 1fr; }
   .newsletter-box { padding: 30px; }
