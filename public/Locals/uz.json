@@ -73,5 +73,18 @@
     "title": "Foto Galereya",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque.",
     "btnViewMore": "Ko'proq ko'rish"
+  },
+  "footer": {
+    "newsletter": "Yangiliklar",
+    "subTitle": "Yangiliklarimizga obuna bo'ling",
+    "desc": "Eng so'nggi yangiliklardan xabardor bo'ling!",
+    "placeholder": "Email manzilingiz",
+    "btn": "Obuna bo'lish",
+    "contact": "Bog'lanish",
+    "address": "8 W 53rd St, London, NY 10019, UK",
+    "hours": "Ish vaqti",
+    "weekdays": "Dushanba-Juma: 08:00 - 00:00",
+    "weekend": "Shanba-Yakshanba: 07:00 - 23:00",
+    "rights": "2022 Pop online. Barcha huquqlar himoyalangan."
   }
 }
