@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import './Hero2.css';
+import "./Hero2.css";
 
 const Hero2 = () => {
   const { t, i18n } = useTranslation();
