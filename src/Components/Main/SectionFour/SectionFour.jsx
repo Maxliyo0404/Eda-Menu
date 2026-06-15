@@ -10,7 +10,7 @@ const SectionFour = () => {
   return (
     <section id="sectionFour" className="news-section">
       <p className="subtitle">{t("sectionFour.subtitle")}</p>
-      <h2 className="title">{t("sectionFour.title")}</h2>
+      <h2 className="titlee">{t("sectionFour.title")}</h2>
       
       <div className="news-container">
         {posts.map((post, index) => (
