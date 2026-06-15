@@ -1,4 +1,4 @@
-/* Asosiy konteyner */
+
 .gallery-section {
   display: flex;
   flex-wrap: wrap;
@@ -117,6 +117,10 @@
     gap: 15px;
     overflow-x: visible;         
     padding-bottom: 0;
+    margin-top: -60px;
+  }
+  .gallery-section{
+    padding: 40px 3%;
   }
 
   .img-card {
