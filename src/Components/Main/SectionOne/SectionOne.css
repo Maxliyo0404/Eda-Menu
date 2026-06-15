@@ -1,101 +1,24 @@
-.section{
-  background: #F8F8F8;
-}
-.section-wrapper { 
-  padding: 60px 0;
-}
-
-.header-row {
+.gallery-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-}
-.custom-nav { 
-  display: flex; 
-  gap: 10px; 
+  padding: 80px 5%;
+  background-color: #ffffff; /* Oq fon */
+  gap: 50px;
 }
 
-.prev-btn, .next-btn {
-  width: 45px; 
-  height: 45px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  background: white;
-  cursor: pointer;
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  transition: 0.3s;
-}
+.gallery-left { flex: 1; color: #0c0c0c; }
+.gallery-left h2 { color: #DCCA87; font-size: 45px; margin: 15px 0; }
+.view-btn { padding: 10px 25px; border: 1px solid #DCCA87; background: transparent; cursor: pointer; }
 
-.prev-btn:hover, .next-btn:hover {
-  background: #dc2626; 
-  color: white;
-  border-color: #dc2626;
-}
-.dish-card {
-  border: 1px solid #dee0e4;
-  border-radius: 20px;
-  padding: 15px;
-  text-align: center;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  height: 100%; 
-  transition: 0.3s;
-  &:hover{
-    transform: scale(0.9);
-  }
-}
-.dishes-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-.dish-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin-bottom: 10px;
-}
+.gallery-right { flex: 2; display: flex; gap: 20px; overflow-x: auto; }
+.img-card { min-width: 250px; height: 350px; border-radius: 8px; overflow: hidden; position: relative; }
+.img-card img { width: 100%; height: 100%; object-fit: cover; }
 
-.dish-name {
-  font-size: 16px;
-  font-weight: 600;
-  margin: 10px 0;
-  flex-grow: 1; 
+/* Responsivlik */
+@media (max-width: 900px) {
+  .gallery-section { flex-direction: column; text-align: center; }
 }
-
-.price { color: #dc2626; font-weight: bold; font-size: 18px; margin-top: 5px; }
-
-@media (max-width: 1024px) {
-  .dishes-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-  }
-}
-@media (max-width: 768px) {
-  .dishes-grid {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-  .section-wrapper{
-    padding: 30px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .prev-btn, .next-btn {
-    width: 35px; 
-  height: 35px;
-  }
-  .dishes-grid {
-    grid-template-columns: 1fr; 
-    gap: 15px;
-  }
-  .dish-img {
-    height: 180px; 
-  }
+@media (max-width: 600px) {
+  .gallery-left h2 { font-size: 30px; }
+  .img-card { min-width: 200px; height: 300px; }
 }
