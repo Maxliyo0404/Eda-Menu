@@ -26,7 +26,7 @@ const SectionOne = () => {
       <div className="container">
       <div className="section-wrapper">
         <div className="header-row">
-          <h2 className="title">{t("sectionOne.popular")}</h2>
+          <h2 className="titlee">{t("sectionOne.popular")}</h2>
           <div className="custom-nav">
             <button className="prev-btn">{"<"}</button>
             <button className="next-btn">{">"}</button>
