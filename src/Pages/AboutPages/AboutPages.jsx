@@ -4,7 +4,7 @@ import React from 'react'
 function AboutPages () {
   return (
     <div>
-      <h2>hyjkl;kjhg</h2>
+      <h2></h2>
     </div>
   )
 }
