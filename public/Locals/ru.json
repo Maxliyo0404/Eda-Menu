@@ -73,6 +73,19 @@
     "title": "Фотогалерея",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque.",
     "btnViewMore": "Смотреть больше"
+  },
+  "footer": {
+    "newsletter": "Рассылка",
+    "subTitle": "Подпишитесь на нашу рассылку",
+    "desc": "И никогда не пропускайте последние обновления!",
+    "placeholder": "Электронная почта",
+    "btn": "Подписаться",
+    "contact": "Свяжитесь с нами",
+    "address": "8 W 53rd St, London, NY 10019, UK",
+    "hours": "Часы работы",
+    "weekdays": "Понедельник-Пятница: 08:00 - 00:00",
+    "weekend": "Суббота-Воскресенье: 07:00 - 23:00",
+    "rights": "2022 Pop online. Все права защищены."
   }
 
 }
