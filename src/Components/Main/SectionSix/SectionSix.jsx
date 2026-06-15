@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { FaInstagram } from 'react-icons/fa';
 import './SectionSix.css';
 import ege1 from './image/ege1.png';
 import ege2 from './image/ege_2.png';
@@ -13,10 +14,10 @@ const SectionSix = () => {
   return (
     <section id="sectionSix" className="gallery-section">
       <div className="gallery-left">
-        <p className="subtitle">{t("sectionSix.subtitle")}</p>
-        <h2 className="title">{t("sectionSix.title")}</h2>
-        <p className="desc">{t("sectionSix.desc")}</p>
-        <button className="view-all">{t("sectionSix.btnViewMore")}</button>
+        <p className="subtitle">{t("sectionSix.subtitle", "Instagram")}</p>
+        <h2 className="title">{t("sectionSix.title", "Photo Gallery")}</h2>
+        <p className="desc">{t("sectionSix.desc", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.")}</p>
+        <button className="view-all">{t("sectionSix.btnViewMore", "View More")}</button>
       </div>
 
       <div className="gallery-right">
@@ -24,7 +25,7 @@ const SectionSix = () => {
           <div key={index} className="img-card">
             <img src={img} alt={`Gallery ${index + 1}`} />
             <div className="overlay">
-               <span className="icon">📷</span>
+               <FaInstagram className="icon" />
             </div>
           </div>
         ))}
