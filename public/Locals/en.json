@@ -16,15 +16,16 @@
     "popular": "Popular Dishes",
   "dish1": "Barbecue Shish kebab Shashlik Skewer"
    },
-   "sectionTwo": {
-    "title": "Our Regular Menu Pack",
-    "all": "All",
-    "shashlik": "Shashlik",
-    "pizza": "Pizza",
-    "burger": "Burger",
-    "doner": "Doner",
-    "dishName": "Barbecue Shish kebab Skewer"
-  },
+  "sectionTwo": {
+  "all": "All",
+  "shawarma": "Shawarma",
+  "turk": "Turk Kebab",
+  "burger": "Hamburger Kebab",
+  "doner": "Doner Kebab",
+  "shashlik": "Shish Kebab",
+  "pizza": "French Fries Pizza",
+  "desserts": "Desserts"
+},
   "sectionThree": {
     "subtitle": "Testimony",
     "title": "Happy Customers",
