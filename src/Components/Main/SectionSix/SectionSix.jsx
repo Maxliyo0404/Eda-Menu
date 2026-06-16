@@ -13,22 +13,31 @@ const SectionSix = () => {
 
   return (
     <section id="sectionSix" className="gallery-section">
-      <div className="gallery-left">
-        <p className="subtitle">{t("sectionSix.subtitle", "Instagram")}</p>
-        <h2 className="title">{t("sectionSix.title", "Photo Gallery")}</h2>
-        <p className="desc">{t("sectionSix.desc", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.")}</p>
-        <button className="view-all">{t("sectionSix.btnViewMore", "View More")}</button>
-      </div>
+      {/* Figma bo'yicha markazlashtiruvchi asosiy container */}
+      <div className="gallery-container">
+        
+        {/* CHAP PANEL: Ma'lumotlar */}
+        <div className="gallery-left">
+          <p className="subtitle">{t("sectionSix.subtitle") || "Instagram"}</p>
+          <h2 className="title">{t("sectionSix.title") || "Photo Gallery"}</h2>
+          <p className="desc">
+            {t("sectionSix.desc") || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."}
+          </p>
+          <button className="view-all">{t("sectionSix.btnViewMore") || "View More"}</button>
+        </div>
 
-      <div className="gallery-right">
-        {images.map((img, index) => (
-          <div key={index} className="img-card">
-            <img src={img} alt={`Gallery ${index + 1}`} />
-            <div className="overlay">
-               <FaInstagram className="icon" />
+        {/* O'NG PANEL: Rasmlar oqimi (Slider) */}
+        <div className="gallery-right">
+          {images.map((img, index) => (
+            <div key={index} className="img-card">
+              <img src={img} alt={`Gallery ${index + 1}`} />
+              <div className="overlay">
+                <FaInstagram className="icon" />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
       </div>
     </section>
   );

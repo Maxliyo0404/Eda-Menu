@@ -1,7 +1,7 @@
 .menu-section { padding: 80px 0; max-width: 1200px; margin: 0 auto; }
 .menu-title { text-align: center; color: #b91c1c; font-size: 40px; margin-bottom: 40px; }
-.filter-buttons { display: flex; justify-content: center; gap: 12px; margin-bottom: 40px; flex-wrap: wrap; }
-.filter-buttons button { 
+.filter-buttonss { display: flex; justify-content: center; gap: 12px; margin-bottom: 40px; flex-wrap: wrap; }
+.filter-buttonss button { 
   padding: 10px 25px; border-radius: 30px; border: 2px solid #b91c1c; 
   background: white; color: #b91c1c; font-weight: 600; cursor: pointer; transition: 0.3s; 
 }
@@ -24,7 +24,7 @@
   .menu-grid { grid-template-columns: 1fr; } 
   .menu-title { font-size: 30px; line-height: 32px; }
 
-  .filter-buttons {
+  .filter-buttonss {
     flex-wrap: wrap;
     justify-content: center;
 
@@ -32,7 +32,7 @@
   .menu-section{
     padding:30px 0;
   }
-  .filter-buttons button {
+  .filter-buttonss button {
     padding: 6px 12px; 
     font-size: 12px;
   }

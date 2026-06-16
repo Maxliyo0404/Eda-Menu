@@ -39,7 +39,7 @@ const SectionTwo = () => {
     <section id="sectionTwo" className="menu-section">
       <h2 className="menu-title">{t("sectionTwo.title")}</h2>
 
-      <div className="filter-buttons">
+      <div className="filter-buttonss">
         {['all', 'shashlik', 'pizza', 'burger', 'doner'].map(cat => (
           <button 
             key={cat} 

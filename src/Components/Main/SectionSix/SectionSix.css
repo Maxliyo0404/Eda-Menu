@@ -1,87 +1,110 @@
-
+/* Asosiy fon va tashqi chegaralar */
 .gallery-section {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #F4F4F4;
+  overflow: hidden; /* Rasmlar ekrandan chiqib ketganda skrol barlarni berkitadi */
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
-  padding: 80px 5%;
-  background-color: #ffffff;
+  justify-content: center;
 }
 
+/* Figma bo'yicha cheklovchi Container */
+.gallery-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* --- CHAP PANEL STILI --- */
 .gallery-left {
-  flex: 1 1 350px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .gallery-left .subtitle {
-  color: #ff6347;
+  color: #bd1c3c; /* Loyihangiz brend rangiga moslandi */
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
 }
 
 .gallery-left .title {
-  font-size: clamp(28px, 4vw, 40px);
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  color: #222;
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .gallery-left .desc {
   color: #666;
+  font-size: 15px;
   line-height: 1.6;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .view-all {
-  padding: 12px 30px;
-  border: 1px solid #ff6347;
+  padding: 12px 35px;
+  border: 1px solid #bd1c3c;
   background: transparent;
-  color: #ff6347;
+  color: #bd1c3c;
+  font-weight: 600;
   cursor: pointer;
   border-radius: 100px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .view-all:hover {
-  background: #ff6347;
+  background: #bd1c3c;
   color: #fff;
+  box-shadow: 0 5px 15px rgba(189, 28, 60, 0.2);
 }
 
-
+/* --- O'NG PANEL (Slider effekti) --- */
 .gallery-right {
-  flex: 2 1 400px;
   display: flex; 
   gap: 20px;
-  width: 100%;
+  width: calc(100% + 40px); /* Ekran chetiga chiroyli chiqishi uchun */
   overflow-x: auto; 
   padding-bottom: 15px;
-  scrollbar-width: none;
+  scrollbar-width: none; /* Firefox uchun skrolbarni yopish */
+  scroll-behavior: smooth;
 }
 
 .gallery-right::-webkit-scrollbar {
-  display: none;
+  display: none; /* Chrome, Safari uchun skrolbarni yopish */
 }
 
+/* Katta ekranda 3 ta to'liq, 4-si kesilib ko'rinishi uchun aniq o'lcham */
 .img-card {
   position: relative;
-  flex: 0 0 250px; 
+  flex: 0 0 240px; /* Rasmlarning eni doimo bir xil turadi */
   aspect-ratio: 3 / 4;
-  border-radius: 12px;
-  background-color: #f0f0f0;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
 
 .img-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
 .img-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
+/* Hover bo'lganda Instagram Overlay chiqishi */
 .overlay {
   position: absolute;
   top: 0;
@@ -101,31 +124,55 @@
 }
 
 .icon {
-  font-size: 40px;
+  font-size: 36px;
   color: white;
 }
 
-@media (max-width: 900px) {
-  .gallery-section { flex-direction: column; text-align: center; }
-  .gallery-left { align-items: center; }
-  .img-card { flex: 0 0 200px; } 
+/* ================= RESPONSIVE DIZAYN ================= */
+
+/* PLANSHEET VERSIYA (Ekran < 992px) */
+@media (max-width: 992px) {
+  .gallery-container {
+    grid-template-columns: 1fr; /* Ustunma-ustun tushadi */
+    text-align: center;
+    gap: 35px;
+  }
+  
+  .gallery-left {
+    align-items: center;
+  }
+  
+  .gallery-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .img-card {
+    flex: 0 0 220px; /* Planshetda rasmlar biroz kichrayadi */
+  }
 }
-@media (max-width: 600px){
-   .gallery-right {
+
+/* MOBIL VERSIYA (Ekran < 600px) */
+@media (max-width: 600px) {
+  .gallery-section {
+    padding: 50px 0;
+  }
+
+  .gallery-container {
+    padding: 0 15px;
+  }
+
+  /* Mobil ekranda 2 qatorli to'liq Grid holatiga o'tadi */
+  .gallery-right {
     display: grid;                
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     overflow-x: visible;         
     padding-bottom: 0;
-    margin-top: -60px;
-  }
-  .gallery-section{
-    padding: 40px 3%;
   }
 
   .img-card {
-    flex: none;                  
-    width: 100%;                 
-    aspect-ratio: 3 / 4;       
+    width: 100%;                  
+    flex: none;                   
   }
 }
