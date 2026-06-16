@@ -97,7 +97,10 @@
     .burger-menu {
         display: flex;
     }
-
+.header-container{
+    height: 60px;
+    padding: 0 20px;
+}
     .header-nav {
         position: fixed;
         top: -100%; 
