@@ -114,5 +114,8 @@
     "btnSend": "Xabarni yuborish",
     "successAlert": "Xabaringiz muvaffaqiyatli yuborildi!",
     "errorAlert": "Xatolik yuz berdi. Qayta urinib ko'ring."
-  }
+  },
+  "sectionOne4": {
+     "title": "Xaritadan toping"
+     }
 }
