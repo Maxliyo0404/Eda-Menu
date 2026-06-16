@@ -101,5 +101,18 @@
     "cardDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "readMore": "Batafsil",
     "viewMore": "Ko'proq ko'rish"
+  },
+  "hero4": {
+    "contactTitle": "Biz bilan bog'lanish",
+    "sendTitle": "Xabar yuborish",
+    "sendDesc": "Agar sizda biron bir savol bo'lsa, bizga SMS yuborishingiz yoki telefon orqali bog'lanishingiz mumkin, shuningdek, ijtimoiy tarmoqlar orqali ham bog'lanishingiz mumkin.",
+    "placeholderName": "Ismingiz",
+    "placeholderEmail": "Email manzilingiz",
+    "placeholderPhone": "Telefon raqamingiz",
+    "placeholderSubject": "Mavzu",
+    "placeholderMessage": "Xabaringiz",
+    "btnSend": "Xabarni yuborish",
+    "successAlert": "Xabaringiz muvaffaqiyatli yuborildi!",
+    "errorAlert": "Xatolik yuz berdi. Qayta urinib ko'ring."
   }
 }

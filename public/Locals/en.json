@@ -101,6 +101,19 @@
     "cardDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "readMore": "Read More",
     "viewMore": "View More"
+  },
+  "hero4": {
+    "contactTitle": "Contact Us",
+    "sendTitle": "Send Message",
+    "sendDesc": "If you have any questions, you can send us an SMS or contact us by phone you can also contact us via social networks.",
+    "placeholderName": "Your name",
+    "placeholderEmail": "Email address",
+    "placeholderPhone": "Phone number",
+    "placeholderSubject": "Subject",
+    "placeholderMessage": "Message",
+    "btnSend": "Send message",
+    "successAlert": "Message sent successfully!",
+    "errorAlert": "Something went wrong. Please try again."
   }
   
 }

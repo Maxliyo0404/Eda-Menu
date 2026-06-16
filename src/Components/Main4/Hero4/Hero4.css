@@ -1,0 +1,185 @@
+.hero4-section {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.hero4-section .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Sarlavha qismi */
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-main-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #242424;
+  margin: 0;
+}
+
+.title-bottom-line {
+  width: 45px;
+  height: 3px;
+  background-color: #bd1c3c;
+  margin: 12px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Grid tuzilishi (Chap va o'ng tomon) */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Chap tarafdagi sidebar */
+.contact-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 24px;
+  background: #ffffff;
+  border: 1px solid #2424240F;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+}
+
+.icon-circle {
+  width: 44px;
+  height: 44px;
+  background: #fdf2f4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #bd1c3c;
+}
+
+.info-text h4 {
+  font-size: 14px;
+  color: #242424;
+  font-weight: 600;
+  margin: 0;
+}
+
+.info-text p {
+  font-size: 13px;
+  color: #777777;
+  margin: 4px 0 0 0;
+}
+
+/* O'ng tarafdagi oq blok (Forma) */
+.contact-form-box {
+  background: #ffffff;
+  border: 1px solid #2424240F;
+  border-radius: 16px;
+  padding: 45px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.02);
+}
+
+.form-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #242424;
+  margin: 0 0 10px 0;
+}
+
+.form-description {
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.6;
+  margin: 0 0 35px 0;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputs-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-inputs input,
+.form-inputs textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #2424241A;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #242424;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+.form-inputs input:focus,
+.form-inputs textarea:focus {
+  border-color: #bd1c3c;
+}
+
+/* Figma dagi qizil tugma */
+.form-btn {
+  background: #bd1c3c;
+  color: #ffffff;
+  border: none;
+  padding: 14px 35px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+.form-btn:hover {
+  background: #9d132e;
+}
+
+/* ==================== RESPONSIVE (MEDIA QUERIES) ==================== */
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr; /* Planshetda ustma-ust tushadi */
+    gap: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-box {
+    padding: 30px 20px;
+  }
+  .inputs-row {
+    grid-template-columns: 1fr; /* Inputlar ham bittalik bo'ladi */
+    gap: 20px;
+  }
+  .contact-main-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-btn {
+    width: 100%; /* Mobilda tugma to'liq eniga cho'ziladi */
+    text-align: center;
+  }
+}
