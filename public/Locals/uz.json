@@ -17,14 +17,15 @@
   "dish1": "Barbecue Shish kebab Shashlik Skewer"
   },
   "sectionTwo": {
-    "title": "Bizning Muntazam Menyularimiz",
-    "all": "Hammasi",
-    "shashlik": "Shashlik",
-    "pizza": "Pitsa",
-    "burger": "Burger",
-    "doner": "Doner",
-    "dishName": "Barbekyu Shashlik Skewer"
-  },
+  "all": "Hammasi",
+  "shawarma": "Shavurma",
+  "turk": "Turk Kabob",
+  "burger": "Gamburger",
+  "doner": "Doner Kabob",
+  "shashlik": "Shashlik",
+  "pizza": "Fri Pitsa",
+  "desserts": "Desertlar"
+},
   "sectionThree": {
     "subtitle": "Sharhlar",
     "title": "Baxtli mijozlarimiz",
