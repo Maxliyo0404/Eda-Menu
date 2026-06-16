@@ -98,13 +98,14 @@
     .burger-menu {
         display: flex;
     }
-.header-container{
-    height: 60px;
-    padding: 0 20px;
-}
+    .header-container{
+        height: 60px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
     .header-nav {
         position: fixed;
-        top: -100%; 
+        top: 0; 
         left: 0;
         width: 100%;
         height: 100vh;
