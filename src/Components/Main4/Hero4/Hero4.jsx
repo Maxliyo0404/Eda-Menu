@@ -5,8 +5,6 @@ import "./Hero4.css";
 
 function Hero4() {
   const { t } = useTranslation();
-
-  // Formadagi inputlar uchun state
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,8 +20,6 @@ function Hero4() {
       [name]: value
     }));
   };
-
-  // Telegram botga xabar yuborish
   const sendMessage = (event) => {
     event.preventDefault();
     
@@ -61,7 +57,6 @@ function Hero4() {
     <section className="hero4-section">
       <div className="container">
         
-        {/* Sarlavha va uning tagidagi kichik qizil chiziq */}
         <div className="contact-header">
           <h2 className="contact-main-title">{t("hero4.contactTitle") || "Contact Us"}</h2>
           <div className="title-bottom-line"></div>
@@ -69,7 +64,6 @@ function Hero4() {
 
         <div className="contact-grid">
           
-          {/* Chap tomon: Figma maketidagi aloqa kartochkalari */}
           <div className="contact-sidebar">
             
             <div className="sidebar-item">
@@ -113,8 +107,6 @@ function Hero4() {
             </div>
 
           </div>
-
-          {/* O'ng tomon: Send Message formasi */}
           <div className="contact-form-box">
             <h3 className="form-title">{t("hero4.sendTitle") || "Send Message"}</h3>
             <p className="form-description">
