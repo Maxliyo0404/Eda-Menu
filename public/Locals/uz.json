@@ -93,5 +93,13 @@
     "categories": ["Hammasi", "Burger", "Pitsa", "Kabob", "Garnirlar", "Salat", "Ichimliklar", "Desertlar", "Fast Food"],
     "productName": "Barbekyu Grilda Pishirilgan Shashlik",
     "productPrice": "$12.00"
+  },
+  "hero3": {
+    "title": "Yangiliklar",
+    "subtitle": "Bloglar",
+    "cardTitle": "Grilni tayyorlash va unga g'amxo'rlik qilish bo'yicha maslahatlar",
+    "cardDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "readMore": "Batafsil",
+    "viewMore": "Ko'proq ko'rish"
   }
 }
