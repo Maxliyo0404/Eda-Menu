@@ -5,59 +5,48 @@ import "./SectionOne4.css";
 function SectionOne4() {
   const { t } = useTranslation();
 
-  // IT Akademiya lokatsiyasi (Toshkent koordinatasi misolida)
-  const lat = 41.311081;
-  const lon = 69.240562;
-  
-  // OpenStreetMap interaktiv iframe xaritasi
-  const mapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${lon-0.01}%2C${lat-0.005}%2C${lon+0.01}%2C${lat+0.005}&layer=mapnik&marker=${lat}%2C${lon}`;
+  // Google Maps uchun xavfsiz va aniq iframe havolasi (Toshkent, IT ta'lim akademiyasi)
+  // Bu havola qidiruvni ham, markerni ham avtomatik markazda ko'rsatadi
+  const googleMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.3637346853655!2d69.240562!3d41.311081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE4JzM5LjkiTiA2OcKwMTQnMjYuMCJF!5e0!3m2!1suz!2sub!4v1718567890123!5m2!1suz!2sub";
 
   return (
     <div className="sectionOne4">
       <div className="container">
         
-        {/* Maketdagi markaziy sarlavha */}
+        {/* Sarlavha */}
         <h2 className="section-one-title">
           {t("sectionOne4.title") || "Find Us By Card"}
         </h2>
 
-        {/* Xarita konteyneri */}
+        {/* Xarita asosi */}
         <div className="map-wrapper">
           
-          {/* Jonli va interaktiv xarita */}
+          {/* Google Maps Jonli Iframe */}
           <iframe
-            title="Academy Location Map"
+            title="Google Map IT Academy"
+            src={googleMapUrl}
             width="100%"
             height="100%"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight="0"
-            marginWidth="0"
-            src={mapUrl}
-            className="interactive-map"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="google-iframe-map"
           ></iframe>
 
-          {/* Maketdagi qizil lokatsiya markeri va pulsatsiya effekti */}
-          <div className="custom-marker-overlay">
-            <div className="marker-pulse"></div>
-            <div className="marker-dot">
-              <span className="marker-icon">📍</span>
-            </div>
-            
-            {/* Lokatsiya ustiga borganda chiquvchi kichik tooltip */}
-            <div className="marker-tooltip">
-              <h4>{t("sectionOne4.academyName")}</h4>
-              <p>{t("sectionOne4.academyAddress")}</p>
-            </div>
+          {/* Maketdagi pulsatsiya qiluvchi qizil kontur */}
+          {/* Google xaritasi markazida chiroyli vizual effekt beradi */}
+          <div className="map-pulse-zone">
+            <div className="pulse-circle"></div>
           </div>
 
-          {/* Maketning o'ng tarafidagi zoom (+/-) boshqaruv paneli */}
+          {/* Maketning o'ng tarafidagi zoom boshqaruv paneli */}
           <div className="map-custom-controls">
-            <button className="control-btn" onClick={() => alert('Zoom in')}>+</button>
+            <button className="control-btn">+</button>
             <div className="control-slider-line">
               <div className="slider-thumb"></div>
             </div>
-            <button className="control-btn" onClick={() => alert('Zoom out')}>-</button>
+            <button className="control-btn">-</button>
           </div>
 
         </div>

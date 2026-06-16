@@ -1,4 +1,4 @@
-/* Umumiy qism */
+/* Asosiy blok */
 .sectionOne4 {
   width: 100%;
   padding: 60px 0;
@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-/* Sarlavha stili */
+/* Sarlavha */
 .section-one-title {
   font-size: 32px;
   font-weight: 700;
@@ -26,11 +26,11 @@
   letter-spacing: -0.5px;
 }
 
-/* Xarita maydoni */
+/* Xarita oynasi o'rab turuvchisi */
 .map-wrapper {
   width: 100%;
   height: 500px;
-  background-color: #f5f5f5;
+  background-color: #f4f4f4;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
@@ -38,126 +38,59 @@
   border: 1px solid #2424240F;
 }
 
-/* Xaritaning o'ziga figma ko'rinishini berish (light-mode filter) */
-.interactive-map {
-  border: none;
-  filter: grayscale(100%) contrast(90%) brightness(102%);
+/* Google Maps iframe stilini figma maketiga moslash (Grayscale filter) */
+.google-iframe-map {
+  filter: grayscale(100%) contrast(95%) brightness(102%);
+  transition: filter 0.3s ease;
 }
 
-/* Maxsus qizil marker joylashuvi (Xaritaning aynan markazida turadi) */
-.custom-marker-overlay {
+/* Kursor xarita ustiga kelganda rangli rejimga o'tishi (ixtiyoriy, qulaylik uchun) */
+.map-wrapper:hover .google-iframe-map {
+  filter: grayscale(0%) contrast(100%) brightness(100%);
+}
+
+/* Maketdagi qizil pulsatsiya zonasi (Markazda qimirlamaydi) */
+.map-pulse-zone {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  pointer-events: none; /* Xaritani siljitishga xalaqit bermaydi */
+  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
-  cursor: pointer;
 }
 
-.marker-dot {
-  width: 45px;
-  height: 45px;
-  background-color: #ffffff;
+/* Figma maketidagi och qizil dumaloq soya */
+.pulse-circle {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(189, 28, 60, 0.12);
+  border: 1.5px solid rgba(189, 28, 60, 0.25);
   border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
+  animation: googleMapPulse 2.5s infinite ease-in-out;
 }
 
-.marker-icon {
-  font-size: 20px;
+@keyframes googleMapPulse {
+  0% { transform: scale(0.95); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.6; }
+  100% { transform: scale(0.95); opacity: 1; }
 }
 
-/* Maketdagi qizil dumaloq zona (Pulse effekti) */
-.marker-pulse {
-  position: absolute;
-  width: 110px;
-  height: 110px;
-  background-color: rgba(189, 28, 60, 0.15);
-  border: 2px solid rgba(189, 28, 60, 0.3);
-  border-radius: 50%;
-  z-index: 1;
-  animation: mapPulse 2s infinite ease-in-out;
-}
-
-@keyframes mapPulse {
-  0% {
-    transform: scale(0.9);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(0.9);
-    opacity: 1;
-  }
-}
-
-/* Hover bo'lganda chiquvchi ma'lumot oynasi */
-.marker-tooltip {
-  position: absolute;
-  bottom: 60px;
-  background: #242424;
-  color: #ffffff;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-size: 13px;
-  white-space: nowrap;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  transform: translateY(10px);
-}
-
-.marker-tooltip::after {
-  content: '';
-  position: absolute;
-  bottom: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 6px 6px 0;
-  border-style: solid;
-  border-color: #242424 transparent;
-}
-
-.custom-marker-overlay:hover .marker-tooltip {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.marker-tooltip h4 {
-  margin: 0 0 4px 0;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.marker-tooltip p {
-  margin: 0;
-  color: #ccc;
-  font-size: 12px;
-}
-
-/* O'ng tarafdagi oq boshqaruv paneli (Zoom +/-) */
+/* O'ng tarafdagi Zoom boshqaruv paneli */
 .map-custom-controls {
   position: absolute;
   right: 25px;
   top: 35px;
   background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 0;
-  width: 36px;
+  padding: 8px 0;
+  width: 34px;
   z-index: 10;
   border: 1px solid #2424240F;
 }
@@ -166,36 +99,30 @@
   background: transparent;
   border: none;
   font-size: 18px;
-  color: #666666;
+  color: #777777;
   cursor: pointer;
   width: 100%;
-  height: 30px;
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  transition: color 0.2s;
-}
-
-.control-btn:hover {
-  color: #bd1c3c;
 }
 
 .control-slider-line {
-  width: 3px;
-  height: 80px;
-  background: #f0f0f0;
-  margin: 8px 0;
+  width: 2px;
+  height: 70px;
+  background: #f2f2f2;
+  margin: 6px 0;
   position: relative;
-  border-radius: 2px;
 }
 
-/* Maketdagi o'sha o'rtadagi qizil slayder nuqtasi */
+/* Slayder ichidagi qizil tugmacha */
 .slider-thumb {
   position: absolute;
-  top: 30px;
+  top: 25px;
   left: -2px;
-  width: 7px;
+  width: 6px;
   height: 12px;
   background: #bd1c3c;
   border-radius: 2px;
@@ -203,10 +130,10 @@
 
 /* ==================== RESPONSIVE DIZAYN ==================== */
 
-/* KATTA VA O'RTA PLANSHEETLAR (Max 992px) */
+/* PLANSHETLAR UCHUN (Max 992px) */
 @media (max-width: 992px) {
   .map-wrapper {
-    height: 420px;
+    height: 400px;
   }
   .section-one-title {
     font-size: 28px;
@@ -217,7 +144,7 @@
 /* KICHIK PLANSHEET VA SMARTFONLAR (Max 768px) */
 @media (max-width: 768px) {
   .map-wrapper {
-    height: 360px;
+    height: 340px;
   }
   .map-custom-controls {
     right: 15px;
@@ -225,23 +152,16 @@
   }
 }
 
-/* KICHIK MOBIL TELEFONLAR (Max 480px) */
+/* MOBIL TELEFONLAR (Max 480px) */
 @media (max-width: 480px) {
   .map-wrapper {
-    height: 300px;
+    height: 280px;
   }
   .section-one-title {
     font-size: 24px;
   }
-  .marker-pulse {
+  .pulse-circle {
     width: 80px;
     height: 80px;
-  }
-  .marker-dot {
-    width: 38px;
-    height: 38px;
-  }
-  .marker-icon {
-    font-size: 16px;
   }
 }

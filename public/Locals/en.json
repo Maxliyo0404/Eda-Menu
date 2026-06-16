@@ -114,6 +114,9 @@
     "btnSend": "Send message",
     "successAlert": "Message sent successfully!",
     "errorAlert": "Something went wrong. Please try again."
-  }
+  },
+  "sectionOne4": {
+     "title": "Find Us By Card"
+     }
   
 }
