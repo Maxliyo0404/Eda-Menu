@@ -1,9 +1,17 @@
+import { useTranslation } from "react-i18next";
 import "./Hero3.css";
 import React from 'react'
 
 function Hero3() {
+    const {t} = useTranslation();
   return (
-    <div>Hero3</div>
+    <div className="hero3">
+        <div className="container">
+            <div className="hero3-info">
+                
+            </div>
+        </div>
+    </div>
   )
 }
 
