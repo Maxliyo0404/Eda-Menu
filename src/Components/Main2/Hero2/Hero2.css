@@ -1,4 +1,4 @@
-/* Umumiy foni va padding */
+
 .menu-section {
   width: 100%;
   padding: 60px 20px;
@@ -6,8 +6,6 @@
   display: flex;
   justify-content: center;
 }
-
-/* Konteyner (Maksimal kenglik 1200px va markazda) */
 .menu-container {
   width: 100%;
   max-width: 1200px;
@@ -16,10 +14,8 @@
   gap: 30px;
   align-items: start;
 }
-
-/* --- CHAP PANEL (Sidebar) --- */
 .menu-sidebar {
-  background-color: #bd1c3c; /* Dizayndagi to'q qizil rang */
+  background-color: #bd1c3c; 
   padding: 40px 25px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(189, 28, 60, 0.15);
@@ -38,8 +34,6 @@
   flex-direction: column;
   gap: 12px;
 }
-
-/* Kategoriya tugmalari */
 .category-btn {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -56,8 +50,6 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-color: #ffffff;
 }
-
-/* Aktiv (tanlangan) tugma stili */
 .category-btn.active {
   background-color: #ffffff;
   color: #bd1c3c;
@@ -65,17 +57,17 @@
   border-color: #ffffff;
 }
 
-/* --- O'NG PANEL (Mahsulotlar Gridi) --- */
+
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Bir qatorda 2 ta card */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 25px;
 }
 
-/* Mahsulot kartochkasi */
+
 .product-card {
   background: #ffffff;
-  border: 1px solid #f0f0f0;
+border: 1px solid #2424241A;
   border-radius: 16px;
   padding: 20px;
   text-align: center;
@@ -118,12 +110,9 @@
   font-weight: 700;
 }
 
-/* ================= RESPONSIVE (Moslashuvchanlik) ================= */
-
-/* PLANSHEET VERSIYA (Katta ekranlardan kichikroq, < 992px) */
 @media (max-width: 992px) {
   .menu-container {
-    grid-template-columns: 1fr; /* Chap va o'ng ustunma-ustun tushadi */
+    grid-template-columns: 1fr;
     gap: 40px;
   }
 
@@ -132,12 +121,10 @@
   }
 
   .categories-list {
-    flex-direction: row; /* Tugmalar yonma-yon joylashadi */
-    flex-wrap: wrap; /* Sig'magani pastga tushadi */
+    flex-direction: row;
+    flex-wrap: wrap; 
   }
 }
-
-/* MOBIL VERSIYA (< 576px) */
 @media (max-width: 576px) {
   .menu-section {
     padding: 30px 15px;
@@ -159,7 +146,7 @@
   }
 
   .menu-grid {
-    grid-template-columns: 1fr; /* Telefonlarda bir qatorda 1 tadan card chiqadi */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 
