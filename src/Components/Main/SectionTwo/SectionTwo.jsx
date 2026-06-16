@@ -14,12 +14,12 @@ import lav_4  from "./image/lav_4.png";
 
 const menuItems = [
   { id: 1, cat: 'shashlik', img: shash },
-  { id: 2, cat: 'pizza', img: sous },
-  { id: 3, cat: 'burger', img:lavash },
+  { id: 2, cat: 'pizza', img: pitsa },
+  { id: 3, cat: 'burger', img: lavash },
   { id: 4, cat: 'doner', img: sous_1 },
-  { id: 5, cat: 'shashlik', img: pitsa },
+  { id: 5, cat: 'pizza', img: sous },
   { id: 6, cat: 'pizza', img: lav_1 },
-  { id: 7, cat: 'burger', img:lav_2  },
+  { id: 7, cat: 'burger', img: lav_2  },
   { id: 8, cat: 'doner', img: gamburger },
   { id: 9, cat: 'shashlik', img: lav_3  },
   { id: 10, cat: 'pizza', img: lav_4  },
@@ -28,35 +28,54 @@ const menuItems = [
 ];
 
 const SectionTwo = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [filter, setFilter] = useState('all');
 
+  // FIGMADAGI BARCHA 8 TA KATEGORIYA KEYLARI
+  const filterCategories = [
+    { key: 'all', label: 'All' },
+    { key: 'shawarma', label: 'Shawarma' },
+    { key: 'turk', label: 'Turk Kebab' },
+    { key: 'burger', label: 'Hamburger Kebab' },
+    { key: 'doner', label: 'Doner Kebab' },
+    { key: 'shashlik', label: 'Shish Kebab' },
+    { key: 'pizza', label: 'French Fries Pizza' },
+    { key: 'desserts', label: 'Desserts' }
+  ];
+
+  // Agar 'all' bo'lsa hamma mahsulot, aks holda tanlangan kategoriya bo'yicha filtrlanadi
   const filteredItems = filter === 'all' 
     ? menuItems 
     : menuItems.filter(item => item.cat === filter);
 
   return (
-    <section id="sectionTwo" className="menu-section">
-      <h2 className="menu-title">{t("sectionTwo.title")}</h2>
+    <section id="sectionTwo" className="section-two-menu">
+      {/* Sarlavha */}
+      <h2 className="two-menu-title">{t("news.title") || "Our Regular Menu Pack"}</h2>
 
-      <div className="filter-buttonss">
-        {['all', 'shashlik', 'pizza', 'burger', 'doner'].map(cat => (
+      {/* Figmadagi hamma 8 ta tugma */}
+      <div className="two-filter-buttons">
+        {filterCategories.map(cat => (
           <button 
-            key={cat} 
-            className={filter === cat ? 'active' : ''} 
-            onClick={() => setFilter(cat)}
+            key={cat.key} 
+            className={filter === cat.key ? 'active' : ''} 
+            onClick={() => setFilter(cat.key)}
           >
-            {t(`sectionTwo.${cat}`)}
+            {/* i18n tarjimasi: agar json'da topilmasa Figmadagi inglizcha varianti turaveradi */}
+            {t(`sectionTwo.${cat.key}`) || cat.label}
           </button>
         ))}
       </div>
 
-      <div className="menu-grid">
+      {/* Mahsulotlar paneli */}
+      <div className="two-menu-grid">
         {filteredItems.map(item => (
-          <div key={item.id} className="menu-card">
-            <img src={item.img} alt={t("sectionTwo.dishName")} />
-            <h3>{t("sectionTwo.dishName")}</h3>
-            <p className="price">$12.00</p>
+          <div key={item.id} className="two-menu-card">
+            <div className="two-card-img-wrapper">
+              <img src={item.img} alt={t("news.productName")} />
+            </div>
+            <h3>{t("news.productName") || "Barbecue Shish-kebab Shashlik Skewer"}</h3>
+            <p className="two-price">{t("news.productPrice") || "$12.00"}</p>
           </div>
         ))}
       </div>
