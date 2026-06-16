@@ -86,5 +86,11 @@
     "weekdays": "Dushanba-Juma: 08:00 - 00:00",
     "weekend": "Shanba-Yakshanba: 07:00 - 23:00",
     "rights": "2022 Pop online. Barcha huquqlar himoyalangan."
+  },
+  "news": {
+    "title": "Bizning Doimiy Menyu Paketimiz",
+    "categories": ["Hammasi", "Burger", "Pitsa", "Kabob", "Garnirlar", "Salat", "Ichimliklar", "Desertlar", "Fast Food"],
+    "productName": "Barbekyu Grilda Pishirilgan Shashlik",
+    "productPrice": "$12.00"
   }
 }
