@@ -38,8 +38,6 @@ function Hero3() {
             </div>
           ))}
         </div>
-
-        {/* Pastdagi "View More" Tugmasi */}
         <div className="hero3-footer">
           <button className="hero3-viewmore-btn">
             {t("hero3.viewMore") || "View More"}

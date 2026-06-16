@@ -93,6 +93,14 @@
     "categories": ["Все", "Бургер", "Пицца", "Шашлык", "Гарниры", "Салат", "Напитки", "Десерты", "Фаст Фуд"],
     "productName": "Шашлык на Гриле Барбекю",
     "productPrice": "$12.00"
+  },
+  "hero3": {
+    "title": "Новости",
+    "subtitle": "Блоги",
+    "cardTitle": "Советы по подготовке гриля и уходу за ним",
+    "cardDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "readMore": "Читать далее",
+    "viewMore": "Показать еще"
   }
 
 }
