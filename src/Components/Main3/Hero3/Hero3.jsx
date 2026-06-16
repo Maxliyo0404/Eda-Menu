@@ -5,6 +5,7 @@ import olov from "./image/olov.png";
 
 function Hero3() {
     const {t} = useTranslation();
+    const blogCards = Array(9).fill(null);
   return (
     <div className="hero3">
         <div className="container">
