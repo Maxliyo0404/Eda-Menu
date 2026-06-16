@@ -93,6 +93,14 @@
     "categories": ["All", "Burger", "Pizza", "Kebab", "Garnishes", "Salad", "Drinks", "Desserts", "Fast Food"],
     "productName": "Barbecue Shish kebab Shashlik Skewer",
     "productPrice": "$12.00"
+  },
+  "hero3": {
+    "title": "News",
+    "subtitle": "Blogs",
+    "cardTitle": "Tips For Prepping And Caring For Your Grill",
+    "cardDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "readMore": "Read More",
+    "viewMore": "View More"
   }
   
 }

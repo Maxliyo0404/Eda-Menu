@@ -1,0 +1,202 @@
+/* Tashqi Section */
+.hero3-section {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+/* Markaziy Container */
+.hero3-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Sarlavha dizayni (Markazlashgan) */
+.hero3-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero3-main-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.hero3-subtitle {
+  font-size: 14px;
+  color: #bd1c3c;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 3 talik Grid Sistemasi */
+.hero3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Kartochka Dizayni */
+.hero3-card {
+  background: #ffffff;
+  border: 1px solid #2424241A;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero3-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Rasm qismi */
+.hero3-img-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.hero3-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hero3-card:hover .hero3-img {
+  transform: scale(1.04);
+}
+
+/* Kartochka ichidagi matnlar */
+.hero3-card-body {
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.hero3-card-title {
+  font-size: 18px;
+  color: #222222;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.hero3-card-desc {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex-grow: 1; /* Matn qisqarib ketganda ham footer bir chiziqda turadi */
+}
+
+/* Kartochka eng pasti (Tugma va Sana) */
+.hero3-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.hero3-readmore-btn {
+  background: transparent;
+  border: none;
+  color: #bd1c3c;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.hero3-readmore-btn:hover {
+  color: #90132b;
+}
+
+.hero3-date {
+  font-size: 13px;
+  color: #999999;
+}
+
+/* Pastdagi "View More" Tugmasi */
+.hero3-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hero3-viewmore-btn {
+  padding: 12px 35px;
+  border: 1px solid #bd1c3c;
+  background: transparent;
+  color: #bd1c3c;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.hero3-viewmore-btn:hover {
+  background: #bd1c3c;
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(189, 28, 60, 0.2);
+}
+
+/* ================= RESPONSIVE DIZAYN (MEDIA QUERIES) ================= */
+
+/* PLANSHEETLAR UCHUN (Ekran < 992px) - 2 ta Ustun */
+@media (max-width: 992px) {
+  .hero3-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .hero3-main-title {
+    font-size: 36px;
+  }
+}
+
+/* KICHIK PLANSHEET VA KATTLAR MOBIL (Ekran < 768px) */
+@media (max-width: 768px) {
+  .hero3-section {
+    padding: 40px 0;
+  }
+  .hero3-grid {
+    gap: 20px;
+  }
+  .hero3-img-wrapper {
+    height: 200px;
+  }
+}
+
+/* SMARTFONLAR UCHUN (Ekran < 576px) - 1 ta Ustun */
+@media (max-width: 576px) {
+  .hero3-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .hero3-main-title {
+    font-size: 30px;
+  }
+  .hero3-header {
+    margin-bottom: 35px;
+  }
+  .hero3-img-wrapper {
+    height: 180px;
+  }
+  .hero3-card-body {
+    padding: 20px 15px;
+  }
+}
