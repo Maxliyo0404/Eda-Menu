@@ -30,8 +30,6 @@ const menuItems = [
 const SectionTwo = () => {
   const { t } = useTranslation();
   const [filter, setFilter] = useState('all');
-
-  // FIGMADAGI BARCHA 8 TA KATEGORIYA KEYLARI
   const filterCategories = [
     { key: 'all', label: 'All' },
     { key: 'shawarma', label: 'Shawarma' },
@@ -42,18 +40,13 @@ const SectionTwo = () => {
     { key: 'pizza', label: 'French Fries Pizza' },
     { key: 'desserts', label: 'Desserts' }
   ];
-
-  // Agar 'all' bo'lsa hamma mahsulot, aks holda tanlangan kategoriya bo'yicha filtrlanadi
   const filteredItems = filter === 'all' 
     ? menuItems 
     : menuItems.filter(item => item.cat === filter);
 
   return (
     <section id="sectionTwo" className="section-two-menu">
-      {/* Sarlavha */}
       <h2 className="two-menu-title">{t("news.title") || "Our Regular Menu Pack"}</h2>
-
-      {/* Figmadagi hamma 8 ta tugma */}
       <div className="two-filter-buttons">
         {filterCategories.map(cat => (
           <button 
@@ -61,13 +54,10 @@ const SectionTwo = () => {
             className={filter === cat.key ? 'active' : ''} 
             onClick={() => setFilter(cat.key)}
           >
-            {/* i18n tarjimasi: agar json'da topilmasa Figmadagi inglizcha varianti turaveradi */}
             {t(`sectionTwo.${cat.key}`) || cat.label}
           </button>
         ))}
       </div>
-
-      {/* Mahsulotlar paneli */}
       <div className="two-menu-grid">
         {filteredItems.map(item => (
           <div key={item.id} className="two-menu-card">

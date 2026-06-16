@@ -3,9 +3,8 @@
   max-width: 1200px; 
   margin: 0 auto; 
   width: 100%;
+  margin-top: -50px;
 }
-
-/* Sarlavha: Chapga tekislangan va rangi to'q qizil/pishti rang */
 .two-menu-title { 
   text-align: left; 
   color: #bd1c3c; 
@@ -13,8 +12,6 @@
   margin-bottom: 25px; 
   font-weight: 700;
 }
-
-/* Buttonlar qatori: Chapdan joylashadi va skrol bo'la oladi */
 .two-filter-buttons { 
   display: flex; 
   justify-content: flex-start; 
@@ -22,8 +19,6 @@
   margin-bottom: 35px; 
   flex-wrap: wrap; 
 }
-
-/* Figma bo'yicha ingichka chegarali va yumaloq buttonlar */
 .two-filter-buttons button { 
   padding: 8px 22px; 
   border-radius: 30px; 
@@ -35,22 +30,16 @@
   transition: all 0.3s ease; 
   font-size: 13px;
 }
-
-/* Aktiv bo'lgandagi to'liq qizil holat */
 .two-filter-buttons button:hover, 
 .two-filter-buttons button.active { 
   background: #bd1c3c; 
   color: white; 
 }
-
-/* Figma bo'yicha 4 talik mukammal Grid */
 .two-menu-grid { 
   display: grid; 
   grid-template-columns: repeat(4, 1fr); 
   gap: 25px; 
 }
-
-/* Kartochkalar dizayni */
 .two-menu-card { 
   border: 1px solid #2424241A; 
   padding: 25px 20px; 
@@ -80,7 +69,7 @@
 .two-menu-card img { 
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Rasmlar buzilmasdan figma kabi chiqadi */
+  object-fit: contain; 
 }
 
 .two-menu-card h3 { 
@@ -89,29 +78,27 @@
   font-weight: 500;
   margin: 10px 0; 
   line-height: 1.4;
-  min-height: 40px; /* Matnlar bir xil chiziqda turishi uchun */
+  min-height: 40px; 
 }
 
 .two-menu-card .two-price { 
   color: #bd1c3c; 
   font-weight: 700; 
   font-size: 16px;
-  margin-top: auto; /* Narx doimo pastda tekis turadi */
+  margin-top: auto; 
 }
 
-/* RESPONSIVE (Ekran o'lchamlariga moslashuv) */
-
 @media (max-width: 1024px) { 
-  .two-menu-grid { grid-template-columns: repeat(3, 1fr); } /* Planshetda 3 ta */
+  .two-menu-grid { grid-template-columns: repeat(3, 1fr); } 
 }
 
 @media (max-width: 768px) { 
-  .two-menu-grid { grid-template-columns: repeat(2, 1fr); } /* Kichik ekranda 2 ta */
+  .two-menu-grid { grid-template-columns: repeat(2, 1fr); } 
   .two-menu-title { font-size: 28px; }
 }
 
 @media (max-width: 480px) {
-  .two-menu-grid { grid-template-columns: 1fr; } /* Mobilda 1 ta */
+  .two-menu-grid { grid-template-columns: 1fr; }
   .two-menu-title { text-align: center; font-size: 24px; }
-  .two-filter-buttons { justify-content: center; } /* Mobilda o'rtaga keladi */
+  .two-filter-buttons { justify-content: center; } 
 }
