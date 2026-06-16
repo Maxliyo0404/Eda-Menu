@@ -1,10 +1,11 @@
-/* Asosiy blok */
+
 .sectionOne4 {
   width: 100%;
   padding: 60px 0;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
+  margin-top: -60px;
 }
 
 .sectionOne4 .container {
@@ -15,8 +16,6 @@
   flex-direction: column;
   align-items: center;
 }
-
-/* Sarlavha */
 .section-one-title {
   font-size: 32px;
   font-weight: 700;
@@ -25,8 +24,6 @@
   text-align: center;
   letter-spacing: -0.5px;
 }
-
-/* Xarita oynasi o'rab turuvchisi */
 .map-wrapper {
   width: 100%;
   height: 500px;
@@ -37,32 +34,25 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
   border: 1px solid #2424240F;
 }
-
-/* Google Maps iframe stilini figma maketiga moslash (Grayscale filter) */
 .google-iframe-map {
   filter: grayscale(100%) contrast(95%) brightness(102%);
   transition: filter 0.3s ease;
 }
 
-/* Kursor xarita ustiga kelganda rangli rejimga o'tishi (ixtiyoriy, qulaylik uchun) */
 .map-wrapper:hover .google-iframe-map {
   filter: grayscale(0%) contrast(100%) brightness(100%);
 }
-
-/* Maketdagi qizil pulsatsiya zonasi (Markazda qimirlamaydi) */
 .map-pulse-zone {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  pointer-events: none; /* Xaritani siljitishga xalaqit bermaydi */
+  pointer-events: none; 
   z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* Figma maketidagi och qizil dumaloq soya */
 .pulse-circle {
   width: 100px;
   height: 100px;
@@ -77,8 +67,6 @@
   50% { transform: scale(1.05); opacity: 0.6; }
   100% { transform: scale(0.95); opacity: 1; }
 }
-
-/* O'ng tarafdagi Zoom boshqaruv paneli */
 .map-custom-controls {
   position: absolute;
   right: 25px;
@@ -117,7 +105,6 @@
   position: relative;
 }
 
-/* Slayder ichidagi qizil tugmacha */
 .slider-thumb {
   position: absolute;
   top: 25px;
@@ -127,10 +114,6 @@
   background: #bd1c3c;
   border-radius: 2px;
 }
-
-/* ==================== RESPONSIVE DIZAYN ==================== */
-
-/* PLANSHETLAR UCHUN (Max 992px) */
 @media (max-width: 992px) {
   .map-wrapper {
     height: 400px;
@@ -140,8 +123,6 @@
     margin-bottom: 30px;
   }
 }
-
-/* KICHIK PLANSHEET VA SMARTFONLAR (Max 768px) */
 @media (max-width: 768px) {
   .map-wrapper {
     height: 340px;
@@ -151,8 +132,6 @@
     top: 15px;
   }
 }
-
-/* MOBIL TELEFONLAR (Max 480px) */
 @media (max-width: 480px) {
   .map-wrapper {
     height: 280px;
