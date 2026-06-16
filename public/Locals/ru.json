@@ -17,14 +17,15 @@
   "dish1": "Barbecue Shish kebab Shashlik Skewer"
   },
   "sectionTwo": {
-    "title": "Наше регулярное меню",
-    "all": "Все",
-    "shashlik": "Шашлык",
-    "pizza": "Пицца",
-    "burger": "Бургер",
-    "doner": "Дёнер",
-    "dishName": "Шашлык барбекю"
-  },
+  "all": "Все",
+  "shawarma": "Шаурма",
+  "turk": "Турецкий Шашлык",
+  "burger": "Гамбургер",
+  "doner": "Донер Кебаб",
+  "shashlik": "Шашлык",
+  "pizza": "Пицца Фри",
+  "desserts": "Десерты"
+},
   "sectionThree": {
     "subtitle": "Отзывы",
     "title": "Счастливые клиенты",
