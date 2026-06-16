@@ -5,7 +5,7 @@ import Layout from "./Components/Layout/Layout";
 import MenuPages from "./Pages/MenuPages/MenuPages";
 import AboutPages from "./Pages/AboutPages/AboutPages";
 import NewsPages from "./Pages/NewsPages/NewsPages";
-import CantactPages from "./Pages/ContactPages/CantactPages";
+import CantactPages from "./Pages/ContactPages/ContactPages";
 
 
 function App() {
